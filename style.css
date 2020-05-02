@@ -1,0 +1,269 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#EEE8AE;
+}
+.main-wrap{
+	width:100%;
+	animation-name:fullpage;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-fill-mode: forwards;
+	transition:10s all ease;
+	
+}
+@keyframes fullpage{
+	0%{
+		background-color:#DBD6FF;
+	}
+	50%{
+		background-color:#5CF900;
+	}
+	100%{
+		background-color:#FF903A;
+		}
+}
+.wrap{
+	width:960px;
+	display:block;
+	margin:0 auto;
+	border-left:1px solid #788A26;
+	border-right:1px solid #788A26;
+	border-radius:3px 3px 3px 3px;
+}
+.header_bg{
+	
+}
+header{
+	background-color:#FAB72A;
+	padding:10px;
+	border-bottom:5px solid #788A26;
+	line-height:30px;
+}
+header h2{
+	color:white;
+	text-shadow:3px 3px 4px black;
+}
+header p{
+	color:#788A26;
+}
+#Menu-bar{
+	background-color:white;
+	height:38px;
+	border-bottom:5px solid #788A26;
+}
+#Menu-bar nav ul{
+	list-style-type:none;
+	z-index:999;	
+}
+#Menu-bar nav ul li{
+	float:left;
+	border-right:1px solid #788A26;
+	position:relative;
+	
+}
+#Menu-bar nav ul li:last-child{
+	border-right:none;
+}
+#Menu-bar nav ul li a{
+	text-decoration:none;
+	color:black;
+	padding:10px 10px;
+	display:block;
+	font-family:arial;
+	transition: .2s all ease;
+}
+#Menu-bar nav ul li a:hover{
+	background-color:#FF8000;
+	color:white;
+}
+#Menu-bar nav ul li ul{
+	list-style-type:none;
+	background-color:white;
+	position:absolute;
+	margin-left:-99999px;
+}
+#Menu-bar nav ul li ul li{
+	float:none;
+	width:237px;
+	border-right:none;
+	border-top:1px solid #788A26;
+	position:relative;
+}
+#Menu-bar nav ul li:hover ul{
+	margin-left:0;	
+}
+#Menu-bar nav ul li ul li ul{
+	list-style-type:none;
+	background-color:white;
+	position:absolute;
+	margin-top:-99999px;
+}
+#Menu-bar nav ul li ul li:hover ul{
+	margin-top:-39px;
+	margin-left:237px;
+}
+
+#slider-wrapper{
+	z-index:5;
+}
+.content{
+	background-color:white;
+	padding:10px;
+	overflow:hidden;
+	border-top:5px solid #788A26;
+}
+.content article p{
+	text-align:justify;
+	width:512px;
+	float:left;
+	
+}
+.content .post_heading{
+	margin-bottom:15px;
+	overflow:hidden;
+	background-color:#ddd;
+}
+.content article{
+	width:620px;
+	float:left;
+	margin-right:30px;
+}
+.content article img{
+	width:100px;
+	height:89px;
+	float:left;
+	margin-right:8px;
+}
+.content aside{
+	float:left;
+	width:288px;
+	border:1px solid red;
+	background-color:#69C238;
+}
+.content aside h2{
+	color:#788A26;
+}
+.content aside ul{
+	list-style-type:none;
+}
+.content aside ul li a{
+	text-decoration:none;
+	color:black;
+}
+.content aside ul li a{
+	color:white;
+}
+.content aside h2{
+	color:white;
+}
+.content h2{
+	margin-bottom:10px;
+}
+/* Css for wallpaper.html page */
+.wallpaper-page blockquote{
+	background-color:#ddd;
+	padding:10px;
+	margin-top:10px;
+	border-left:5px solid orange;
+	text-align:center;
+	font-weight:bold;
+}
+.wallpaper-page{
+	border-top:none;
+}
+.wallpaper-page article{
+	width:620px;
+}
+.wallpaper-page figure img{
+	width: 618px;
+	height: auto;
+}
+.wallpaper-page figure{
+	width: 618px;
+	background-color:#ddd;
+	padding:10px;
+	margin-top:10px;
+}
+.wallpaper-page figure:hover{
+    box-shadow: 1px 1px 9px 1px #032b11;
+}
+.wallpaper-page figure figcaption{
+	color: #f5590f;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+    text-shadow: 1px 0px 2px black;
+	z-index:3;
+}
+.wallpaper-page article a{
+	display:block;
+	margin:0 auto;
+	padding:10px 10px;
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	margin-top:10px;
+	width: 385px;
+}
+.wallpaper-page article a:hover{
+	background-color:orange;
+}
+.wallpaper-page aside{
+	border:1px solid red;
+	float:left;
+	width:288px;
+	background-color:#69C238;
+}
+.next-page-section{
+	margin-top: 31px;
+    margin-bottom: 18px;
+	margin-left: 10px;
+    margin-right: -20px;
+}
+}
+.next-page-section span{
+	
+}
+.next-page-section span a{
+	display:inline;
+	padding: 5px 10px;
+	color:white;
+	background-color:black;
+	text-decoration:none;
+	text-align:center;
+	margin-top:0;
+	width: 100px;
+}
+.next-page-section span a:hover{
+	background-color:#DD5044;
+}
+
+.wallpaper-page aside .last-sidebar{
+	margin-bottom:none;
+	border-bottom:none;
+}
+.wallpaper-page .sidebar{
+	margin-bottom:10px;
+	border-bottom:1px solid red;
+}
+.wallpaper-page aside ul li a{
+	color:white;
+}
+.wallpaper-page aside h2{
+	color:white;
+}
+/* End of css for wallpaper.html page */
+/* footer section */
+#footer{
+	background-color:black;
+	padding:10px 5px;
+}
+#footer marquee{
+	text-align:center;
+	color:white;
+}
+/* end of footer section */
